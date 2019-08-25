@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark" style="background-color: #ba32a0;">
+    <a class="navbar-brand title-text" href="#">Titanic - Dashboard</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+        <form name="dropdown-form" action="" method="POST">
+            <select class="my-dropdown-menu" name="dropdown-select" style="padding:8px;border-radius:8px;">
+                <option value="1" {% if selected_class=='1' %} selected {% endif %}>1st Class</option>
+                <option value="2" {% if selected_class=='2' %} selected {% endif %}>2nd Class</option>
+                <option value="3" {% if selected_class=='3' %} selected {% endif %}>3rd Class</option>
+            </select>
+            <button class="submit-btn" type="submit">Apply</button>
+        </form>
+    </div>
+</nav>
